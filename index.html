@@ -6,28 +6,34 @@
     <title>Cerealometer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <style media="screen">
-      body { background: #20162D; color: #fff; font-family: Roboto, Helvetica, Arial, sans-serif; }
-      .ui.grid { height: 100%; }
+      body { color: #343f53; font-family: "Open Sans", sans-serif; }
       .ui.container { padding-top: 50px; }
+      .column { max-width: 802px; }
+      .proj { margin-top: 3em; }
+      img { margin-bottom: 1em; }
+      .stroke { border: 1px solid #eee; }
+      .name { color: #6c798f; letter-spacing: 1px; font-size: 14px; line-height: 20px; font-weight: 600; }
+      h1 { margin-top: .5em; }
+      h2, a, a:active, a:visited, a:link, a:hover { color: #f65b5f; }
+      h2 { font-size: 2rem; }
+      p { font-size: 1.2em !important; line-height: 2em; }
     </style>
   </head>
   <body>
-    <div class="ui middle aligned center aligned grid">
-      <div class="row">
-        <div class="column">
-          <div>Introducing...</div>
-          <div class="ui huge image">
-            <a href="https://github.com/ahtraddis/cerealometer"><img src="images/logo.png" /></a>
-          </div>
-          <p>A tareable product.</p>
-          <div class="ui container">
-            <button class="ui inverted basic button" onclick="location.href='https://github.com/ahtraddis/cerealometer'">
-              Main repo
-            </button>
-            <button class="ui inverted basic button" onclick="location.href='https://github.com/ahtraddis/cerealometer-hardware'">
-              Hardware repo
-            </button>
-          </div>
+    <div class="ui middle aligned left aligned grid container">
+      <div class="column">
+        <div class="name">ERIC SCHWARTZ</div>
+        <h1>Recent Projects</h1>
+        <p>Fresh off the workbench. More detail can be found in the repos.</p>
+        <div class="proj">
+          <h2><a target="_blank" href="https://github.com/ahtraddis/cerealometer">Cerealometer</a></h2>
+          <a href="https://github.com/ahtraddis/cerealometer" target="_blank"><img src="images/titles/CerealometerScreenshots.png" alt="Cerealometer app screenshots" /></a>
+          <p>An IoT-enabled cereal monitoring solution designed to mitigate the impact of breakfast outages. Includes both a custom <a href="https://github.com/ahtraddis/cerealometer-hardware" target="_blank">hardware device</a> and a <a href="https://github.com/ahtraddis/cerealometer" target="_blank">mobile app</a>.</p>
+        </div>
+        <div class="proj">
+          <h2><a target="_blank" href="https://github.com/ahtraddis/totallyspacedout">Totally Spaced Out Virtual 10K</a></h2>
+          <a href="https://github.com/ahtraddis/totallyspacedout" target="_blank"><img class="stroke" src="images/titles/TotallySpacedOut.png" alt="Totally Spaced Out screenshot" /></a>
+          <p><a href="https://github.com/ahtraddis/totallyspacedout" target="_blank">Race bib generator</a> for the Totally Spaced Out Virtual 10K - benefiting the SAFE Austin Children's Shelter.</p>
         </div>
       </div>
     </div>
